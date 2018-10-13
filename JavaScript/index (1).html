@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		
+		<style type="text/css">
+        		 body{
+				background:goldenrod;				
+			}
+				ul{
+				list-style: none;
+				
+				overflow: hidden;
+				width: 600px;
+				margin: auto;
+			}
+			ul li{
+				float: left;
+				font-family: "微软雅黑";
+				font-size: 24px;
+				width: 187px;
+				font-weight: bolder;
+				line-height: 50px;
+				text-align: center;
+			}
+			a{
+				color: brown;
+				text-decoration: none;
+			}
+			.i{
+				background-color: red;
+			}
+			#body div{
+				width: 600px;
+				height: 300px;
+				margin: auto;
+				display: none;
+				background: green;
+			}
+			#body .index{
+				display: block;
+			}
+   
+		</style>
+	</head>
+	<body>
+		<div class="big">
+			<div id="top">
+				<ul>
+					<li class=""><a>one</a></li>
+					<li><a>two</a></li>
+					<li><a>five</a></li>
+					<li><a>six</a></li>
+				</ul>
+			</div>
+				<div id="body">
+					 <div class="inex">
+					 	<p>大的</p>
+					 </div>
+					 <div>
+					 	<p>啥</p>
+					 </div>
+					 <div>
+					 	<p>大大声</p>
+					 </div>
+					 <div>
+					 	<p> 撒的撒的</p>
+					 </div>
+				 </div>
+		</div>
+	</body>
+	<script type="text/javascript">
+		
+		window.onload=function(){
+	var one=document.getElementById("top").getElementsByTagName("li");
+	var two=document.getElementById("body").getElementsByTagName("div");
+	for(var i=0;i<one.length;i++)
+	{
+		one[i].index=i;
+		one[i].onmousemove=function(){
+			
+			for(var j=0;j<one.length;j++)
+			{
+				one[j].className=" ";
+				two[j].className=" ";
+				
+			}
+			this.className="i";
+			two[this.index].className="index";
+		}
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}
+
+	</script>
+</html>

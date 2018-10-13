@@ -1,0 +1,70 @@
+.n1{
+	
+	margin: 20px 30px 20px 30px;
+	
+}
+nav{
+	width: 800px;
+	height: auto;
+	border-bottom: 2px black solid;
+	border-top: 2px black solid;
+	margin: 10px auto;
+	padding: 10px 0 10px 0;
+}
+h2{
+	margin: 10px auto;
+	width: 200px;
+	height: auto;
+}
+.c{
+	width: 800px;
+	height: 500px;
+	margin: 0 auto;
+}
+.sd{
+	width: 800px;
+	height: auto;
+	margin: 0 auto;
+}
+*{
+	list-style: none;outline: none;
+}
+body{
+	font-family: "微软雅黑";
+	text-align: center;
+}
+.n1:nth-child(1){
+	text-indent: 0;
+}
+.n1:link,.n1:visited{
+	text-decoration: none;
+	color:cornflowerblue
+}
+.n1:hover{
+	text-decoration: underline;
+}
+.sd{
+	display: none;
+}
+p:before{content:url(../img/11.png) ;}
+p:nth-child(odd){
+	color: chartreuse;
+}
+:target{
+	display: block;
+	
+}
+p{
+	float: left;
+	line-height: 10px;
+}
+p:nth-child(2) em{
+	color: burlywood;
+	font-weight: bold;
+	font-style: normal;
+}
+p:nth-child(3) em{
+	color:darkcyan
+	font-weight: bold;
+	font-style: normal;
+}
